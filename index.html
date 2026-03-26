@@ -56,7 +56,7 @@ body {
   padding: 12px;
   font-size: 16px;
   border: 2px solid yellow;
-  background: rgba(255,255,0,0.2);
+  background: rgba(255,255,0,0);
   color: black;
   text-align: center;
   font-family: 'Press Start 2P', monospace;
@@ -75,7 +75,7 @@ body {
 <img id="final" class="screen hidden" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigfnR_2822cT9gY1q4S4UkWjNRQx8F53OoNldWwnUtborbIxDtg-Cbqe1VzN6wgZ8K9IITcw0R4BZB5PT_K4J4oTYktUr9ehn0ysV76BX86_62DezZ5CZzSKRttBEC8NPpVBBcz2iFDwcDcU8hMKgaJt14mSxILD2XlxqEZRMcb6FweLgmLhNK7knRkony/s320/8.png">
 
 <div id="inputBox" class="hidden">
-  <input id="codeInput" placeholder="Digite o código...">
+  <input id="codeInput" placeholder="AAAAAA" color="black">
 </div>
 
 <script>
@@ -98,53 +98,60 @@ function showScreen(id){
 
 const codes = {
 
-"eli": "Eli\nEli, nós somos Eli\nEli, Eli Nadler\nEli fará nossa ascensão",
-"eli nadler": "Eli\nEli, nós somos Eli\nEli, Eli Nadler\nEli fará nossa ascensão",
+"eli": "ELI\nELI, NÓS SOMOS ELI\nELI, ELI NADLER\nELI FARÁ NOSSA ASCENSÃO",
+"eli nadler": "ELI\nELI, NÓS SOMOS ELI\nELI, ELI NADLER\nELI FARÁ NOSSA ASCENSÃO",
 
-"doença": "Enquanto bulbos continuam na pele\nSeus sonhos não são mais seus\nAo atingir os ossos\nAs raízes se movem livremente",
-"doença das raízes": "Enquanto bulbos continuam na pele\nSeus sonhos não são mais seus\nAo atingir os ossos\nAs raízes se movem livremente",
-"doença das raízes profundas": "Enquanto bulbos continuam na pele\nSeus sonhos não são mais seus\nAo atingir os ossos\nAs raízes se movem livremente",
+"doença": "ENQUANTO BULBOS CONTINUAM NA PELE\nSEUS SONHOS NÃO SÃO MAIS SEUS\nAO ATINGIR OS OSSOS\nAS RAÍZES SE MOVEM LIVREMENTE",
+"doença das raízes": "ENQUANTO BULBOS CONTINUAM NA PELE\nSEUS SONHOS NÃO SÃO MAIS SEUS\nAO ATINGIR OS OSSOS\nAS RAÍZES SE MOVEM LIVREMENTE",
+"doença das raízes profundas": "ENQUANTO BULBOS CONTINUAM NA PELE\nSEUS SONHOS NÃO SÃO MAIS SEUS\nAO ATINGIR OS OSSOS\nAS RAÍZES SE MOVEM LIVREMENTE",
 
-"layla": "Layla está com a gente agora\nLayla está com a gente agora\nLayla está com a gente agora\nLayla se tornou a gente agora",
-"layla paes": "Layla está com a gente agora\nLayla está com a gente agora\nLayla está com a gente agora\nLayla se tornou a gente agora",
+"layla": "LAYLA ESTÁ COM A GENTE AGORA\nLAYLA ESTÁ COM A GENTE AGORA\nLAYLA ESTÁ COM A GENTE AGORA\nLAYLA SE TORNOU A GENTE AGORA",
+"layla paes": "LAYLA ESTÁ COM A GENTE AGORA\nLAYLA ESTÁ COM A GENTE AGORA\nLAYLA ESTÁ COM A GENTE AGORA\nLAYLA SE TORNOU A GENTE AGORA",
 
-"anastacio": "Seu poder é uma dádiva\nSuas escritas são belas\nAprendeu a lidar com raízes\nÉ um pilar",
+"anastácio": "SEU PODER É UMA DÁDIVA\nSUAS ESCRITAS SÃO BELAS\nAPRENDEU A LIDAR COM RAÍZES\nÉ UM PILAR",
 
-"acampamento": "Novas coisas vagam pelos campos de alimentação\nAs colheitas sempre são frutíferas\nHóspedes ouvem um rangido\nRaízes foram bem-vindas",
-"acampamento lunar": "Novas coisas vagam pelos campos de alimentação\nAs colheitas sempre são frutíferas\nHóspedes ouvem um rangido\nRaízes foram bem-vindas",
-"acampamento lunar de aki": "Novas coisas vagam pelos campos de alimentação\nAs colheitas sempre são frutíferas\nHóspedes ouvem um rangido\nRaízes foram bem-vindas",
+"acampamento": "NOVAS COISAS VAGAM PELOS CAMPOS DE ALIMENTAÇÃO\nAS COLHEITAS SEMPRE SÃO FRUTÍFERAS\nHÓSPEDES OUVEM UM RANGIDO\nRAÍZES FORAM BEM-VINDAS",
+"acampamento lunar": "NOVAS COISAS VAGAM PELOS CAMPOS DE ALIMENTAÇÃO\nAS COLHEITAS SEMPRE SÃO FRUTÍFERAS\nHÓSPEDES OUVEM UM RANGIDO\nRAÍZES FORAM BEM-VINDAS",
+"acampamento lunar de aki": "NOVAS COISAS VAGAM PELOS CAMPOS DE ALIMENTAÇÃO\nAS COLHEITAS SEMPRE SÃO FRUTÍFERAS\nHÓSPEDES OUVEM UM RANGIDO\nRAÍZES FORAM BEM-VINDAS",
+"campo de alimentação": "NOVAS COISAS VAGAM PELOS CAMPOS DE ALIMENTAÇÃO\nAS COLHEITAS SEMPRE SÃO FRUTÍFERAS\nHÓSPEDES OUVEM UM RANGIDO\nRAÍZES FORAM BEM-VINDAS",
+"campos de alimentação": "NOVAS COISAS VAGAM PELOS CAMPOS DE ALIMENTAÇÃO\nAS COLHEITAS SEMPRE SÃO FRUTÍFERAS\nHÓSPEDES OUVEM UM RANGIDO\nRAÍZES FORAM BEM-VINDAS",
 
-"monstro": "Embaixo dos seus pés\nRastejando pelo chão\nLigando ninhos á casas de família\nEles já foram outra coisa",
-"monstros": "Embaixo dos seus pés\nRastejando pelo chão\nLigando ninhos á casas de família\nEles já foram outra coisa",
-"aranha": "Embaixo dos seus pés\nRastejando pelo chão\nLigando ninhos á casas de família\nEles já foram outra coisa",
-"aranhas": "Embaixo dos seus pés\nRastejando pelo chão\nLigando ninhos á casas de família\nEles já foram outra coisa",
-"polvo": "Embaixo dos seus pés\nRastejando pelo chão\nLigando ninhos á casas de família\nEles já foram outra coisa",
-"polvo de luz": "Embaixo dos seus pés\nRastejando pelo chão\nLigando ninhos á casas de família\nEles já foram outra coisa",
-"aranha de luz": "Embaixo dos seus pés\nRastejando pelo chão\nLigando ninhos á casas de família\nEles já foram outra coisa",
+"aranha": "EMBAIXO DE SEUS PÉS\nRASTEJANDO PELO CHÃO\nLIGANDO NINHOS Á CASAS DE FAMÍLIA\nELES JÁ FORAM OUTRA COISA",
+"aranhas": "EMBAIXO DE SEUS PÉS\nRASTEJANDO PELO CHÃO\nLIGANDO NINHOS Á CASAS DE FAMÍLIA\nELES JÁ FORAM OUTRA COISA",
+"aranha de luz": "EMBAIXO DE SEUS PÉS\nRASTEJANDO PELO CHÃO\nLIGANDO NINHOS Á CASAS DE FAMÍLIA\nELES JÁ FORAM OUTRA COISA",
+"aranhas de luz": "EMBAIXO DE SEUS PÉS\nRASTEJANDO PELO CHÃO\nLIGANDO NINHOS Á CASAS DE FAMÍLIA\nELES JÁ FORAM OUTRA COISA",
+"polvo": "EMBAIXO DE SEUS PÉS\nRASTEJANDO PELO CHÃO\nLIGANDO NINHOS Á CASAS DE FAMÍLIA\nELES JÁ FORAM OUTRA COISA",
+"polvos": "EMBAIXO DE SEUS PÉS\nRASTEJANDO PELO CHÃO\nLIGANDO NINHOS Á CASAS DE FAMÍLIA\nELES JÁ FORAM OUTRA COISA",
+"polvo de luz": "EMBAIXO DE SEUS PÉS\nRASTEJANDO PELO CHÃO\nLIGANDO NINHOS Á CASAS DE FAMÍLIA\nELES JÁ FORAM OUTRA COISA",
+"polvos de luz": "EMBAIXO DE SEUS PÉS\nRASTEJANDO PELO CHÃO\nLIGANDO NINHOS Á CASAS DE FAMÍLIA\nELES JÁ FORAM OUTRA COISA",
 
-"luka": "Um receptáculo foi encontrado\nSeu interior foi definido como ocupado\nPortava e protegia um pilar\nLuka se tornou a gente agora",
+"luka": "UM RECEPTÁCULO FOI ENCONTRADO\nSEU INTERIOR FOI DEFINIDO COMO OCUPADO\nPORTAVA E PROTEGIA UM PILAR\nLUKA SE TORNOU A GENTE AGORA",
+"luka fuchs": "UM RECEPTÁCULO FOI ENCONTRADO\nSEU INTERIOR FOI DEFINIDO COMO OCUPADO\nPORTAVA E PROTEGIA UM PILAR\nLUKA SE TORNOU A GENTE AGORA",
 
-"raiz": "Estão em todas as partes\nA semente do caos, foi plantada aqui\nPlanetas não resistem a tentação\nSão um pilar",
-"raizes": "Estão em todas as partes\nA semente do caos, foi plantada aqui\nPlanetas não resistem a tentação\nSão um pilar",
+"raíz": "ESTÃO EM TODAS AS PARTES\nA SEMENTE DO CAOS, FOI PLANTADA AQUI\n//////// NÃO RESISTEM A TENTAÇÃO\nSÃO UM PILAR",
+"raízes": "ESTÃO EM TODAS AS PARTES\nA SEMENTE DO CAOS, FOI PLANTADA AQUI\n//////// NÃO RESISTEM A TENTAÇÃO\nSÃO UM PILAR",
 
-"ninho": "Eli vê a Terra morrer por dentro\nLar da propagação do caos\nSua casa não lhe pertence mais\nOssos antigos crescem",
-"ninhos": "Eli vê a Terra morrer por dentro\nLar da propagação do caos\nSua casa não lhe pertence mais\nOssos antigos crescem",
-"jardim": "Eli vê a Terra morrer por dentro\nLar da propagação do caos\nSua casa não lhe pertence mais\nOssos antigos crescem",
-"jardins": "Eli vê a Terra morrer por dentro\nLar da propagação do caos\nSua casa não lhe pertence mais\nOssos antigos crescem",
+"ninho": "ELI VÊ A TERRA MORRER POR DENTRO\nLAR DA PROPAGAÇÃO DO CAOS\nSUA CASA NÃO LHE PERTENCE MAIS\nOSSOS ANTIGOS CRESCEM",
+"ninhos": "ELI VÊ A TERRA MORRER POR DENTRO\nLAR DA PROPAGAÇÃO DO CAOS\nSUA CASA NÃO LHE PERTENCE MAIS\nOSSOS ANTIGOS CRESCEM",
+"jardim": "ELI VÊ A TERRA MORRER POR DENTRO\nLAR DA PROPAGAÇÃO DO CAOS\nSUA CASA NÃO LHE PERTENCE MAIS\nOSSOS ANTIGOS CRESCEM",
+"jardins": "ELI VÊ A TERRA MORRER POR DENTRO\nLAR DA PROPAGAÇÃO DO CAOS\nSUA CASA NÃO LHE PERTENCE MAIS\nOSSOS ANTIGOS CRESCEM",
 
-"lewis": "Um acordo foi feito\nUm acordo não foi cumprido\nLinhagem desprezível carregará seu pecado\nDívidas serão cobradas",
-"lewis aki": "Um acordo foi feito\nUm acordo não foi cumprido\nLinhagem desprezível carregará seu pecado\nDívidas serão cobradas",
+"lewis": "UM ACORDO FOI FEITO\nUM ACORDO NÃO FOI TRANQUILO\nSUA LINHAGEM DESPREZÍVEL CARREGARÁ SEU PEGADO\nDÍVIDAS FORAM COBRADAS",
+"lewis aki": "UM ACORDO FOI FEITO\nUM ACORDO NÃO FOI TRANQUILO\nSUA LINHAGEM DESPREZÍVEL CARREGARÁ SEU PEGADO\nDÍVIDAS FORAM COBRADAS",
 
-"clive": "Um acordo foi feito\nHerdeiro de dívidas passadas\nAbrigará lares em seu lar\nMultiplicará sua população",
-"clive aki": "Um acordo foi feito\nHerdeiro de dívidas passadas\nAbrigará lares em seu lar\nMultiplicará sua população",
+"clive": "UM ACORDO FOI FEITO\nHERDEIRO DE DÍVIDAS PASSADAS\nABRIGARÁ LARES EM SEU LAR\nMULTIPLICARÁ NOSSA POPULAÇÃO",
+"clive aki": "UM ACORDO FOI FEITO\nHERDEIRO DE DÍVIDAS PASSADAS\nABRIGARÁ LARES EM SEU LAR\nMULTIPLICARÁ NOSSA POPULAÇÃO",
 
-"ordem": "Esse lugar não tem salvação\nA Ordem os protegem em vão\nAinda assim, são incapazes e fracos\nNão é algo que deva se preocupar com",
-"ordo realitas": "Esse lugar não tem salvação\nA Ordem os protegem em vão\nAinda assim, são incapazes e fracos\nNão é algo que deva se preocupar com",
+"ordem": "PARA ESSE LUGAR, NÃO HÁ SALVAÇÃO\nA ORDEM OS PROTEGEM EM VÃO\nAINDA ASSIM, SÃO INCAPAZES E FRACOS\nNÃO É ALGO QUE DEVA SE PREOCUPAR COM",
+"ordo realitas": "PARA ESSE LUGAR, NÃO HÁ SALVAÇÃO\nA ORDEM OS PROTEGEM EM VÃO\nAINDA ASSIM, SÃO INCAPAZES E FRACOS\nNÃO É ALGO QUE DEVA SE PREOCUPAR COM",
 
-"planta": "Zombaria da Natureza\nA verdade sobre elas se esconde\nNovas memórias se soubessem\nElas já foram outra coisa",
-"plantas": "Zombaria da Natureza\nA verdade sobre elas se esconde\nNovas memórias se soubessem\nElas já foram outra coisa",
-"zombaria": "Zombaria da Natureza\nA verdade sobre elas se esconde\nNovas memórias se soubessem\nElas já foram outra coisa",
-"zombaria da natureza": "Zombaria da Natureza\nA verdade sobre elas se esconde\nNovas memórias se soubessem\nElas já foram outra coisa"                                                                                                                                                                                                                                                                                                                                                          
+"planta": "ZOMBARIA DA NATUREZA\nA VERDADE SOBRE ELAS SE ESCONDE\nNOVAS MEMÓRIAS SE SOBRESSAEM\nELAS JÁ FORAM OUTRA COISA",
+"plantas": "ZOMBARIA DA NATUREZA\nA VERDADE SOBRE ELAS SE ESCONDE\nNOVAS MEMÓRIAS SE SOBRESSAEM\nELAS JÁ FORAM OUTRA COISA",
+"zombaria": "ZOMBARIA DA NATUREZA\nA VERDADE SOBRE ELAS SE ESCONDE\nNOVAS MEMÓRIAS SE SOBRESSAEM\nELAS JÁ FORAM OUTRA COISA",
+"zombaria da natureza": "ZOMBARIA DA NATUREZA\nA VERDADE SOBRE ELAS SE ESCONDE\nNOVAS MEMÓRIAS SE SOBRESSAEM\nELAS JÁ FORAM OUTRA COISA",
+
+"alberto": "ESCOLHIDO POR ELI PARA //////////\n/////////////////////////\n///////////////\n/////////////////////////////////////////////////",
+"alberto luci": "ESCOLHIDO POR ELI PARA //////////\n/////////////////////////\n///////////////\n/////////////////////////////////////////////////",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 };
 
@@ -158,7 +165,7 @@ document.addEventListener("keydown", () => {
   loadingText.style.top = "80%";
   loadingText.style.left = "50%";
   loadingText.style.transform = "translateX(-50%)";
-  loadingText.innerText = "Carregando";
+  loadingText.innerText = "CARREGANDO";
   document.body.appendChild(loadingText);
 
   setTimeout(() => {
@@ -222,7 +229,7 @@ document.getElementById("codeInput").addEventListener("keydown", function(e){
   return;
 }
 
-      text.innerText = codes[value] || "Código desconhecido";
+      text.innerText = codes[value] || "NÃO CATALOGADO";
       document.body.appendChild(text);
 
       setTimeout(() => {
